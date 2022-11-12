@@ -19,6 +19,7 @@ class _HomepageState extends State<HomePage> {
 
   List mySmartDevices = [
     //[ smartDeviceName, iconPatch, poverStatus ]
+    ["car", "lib/icons/car-side.png", false],
     ["smart Light", "lib/icons/light-bulb.png", true],
     ["smart AC", "lib/icons/air-conditioner.png", false],
     ["smart TV", "lib/icons/smart-tv.png", false],
@@ -107,7 +108,7 @@ class _HomepageState extends State<HomePage> {
 
             Expanded(
                 child: GridView.builder(
-                    physics: const NeverScrollableScrollPhysics(),
+                    // physics: const NeverScrollableScrollPhysics(),
                     padding: const EdgeInsets.all(25),
                     itemCount: mySmartDevices.length,
                     gridDelegate:
